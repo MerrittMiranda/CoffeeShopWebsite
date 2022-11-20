@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>JavaJam Coffee Bar Jobs</title>
+		<link rel="stylesheet" href="javajam.css">
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		<header>
+			<a href="index.html"><h1>JavaJam Coffee Bar<br></h1></a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="music.html">Music</a></li> 
+				<li><a href="jobs.html">Jobs</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div id="herojobs"></div>
+			<h2>Jobs at JavaJam</h2>
+				<p>Want to work at JavaJam? Fill out the form below to start your application. 
+					All information is required.</p>
+			<form name="application" method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+				<label for="form">Name: </label>
+					<input type="text" name="myName" required>
+				<label for="form">E-mail: </label>
+					<input type="email" name="myEmail" required>
+				<label for="form">Start Date: </label>
+					<input type="date" name="myStart" required>
+				<label for="form">Experience: </label><br>
+					<textarea name="myExperience" cols="20" rows="2" required>
+					</textarea>
+					<br><br>
+				<!--Submit button-->	
+					<input type="submit" value="Apply Now" id="mySubmit" required>
+			</form>
+		</main>
+		<footer>
+			Copyright &copy; 2020 JavaJam Coffee Bar<br>
+			<a href="mailto:mirandamerritt@emaillink.com">mirandamerritt@emaillink</a>
+		</footer>
+		</div>
+	</body>
+</html>

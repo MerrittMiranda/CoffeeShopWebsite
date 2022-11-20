@@ -1,0 +1,224 @@
+header{
+	color: #231814;
+	background-color: #D2B48C;
+	background-image: url(cup.jpg);
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	padding-left: 105px; 
+	height: 128px; }
+header a{text-decoration: none; }
+header a:link{color: #231814;}
+header a:visited{color: #231814;}
+header a:hover{color: #FEF6C2; }
+	
+nav{
+	text-align: center;
+	font-size: 1.5em;  }
+nav a{text-decoration: none; }
+nav a:link{color: #FEF6C2; }
+nav a:visited{color: #D2B48C; }
+nav a:hover{color: #CC9933; }
+nav ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none; 
+	padding: 0;
+	margin: 0;
+	font-size: 1.25em; }
+nav li{
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	border-color: #D2B48C; }
+	
+body{
+	background-color: #D2B48C;
+	color: #221811;
+	font-family: Tahoma, Arial, sans-serf; 
+	margin: 0; }
+	
+main{
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 2em;
+	padding-top: 0;
+	background-color: #FEF6C2;
+	display: block; }
+main h2{
+	padding-left: 1em;
+	padding-right: 1em; }
+main h3{
+	padding-left: 1em;
+	padding-right: 1em; }
+main h4{
+	padding-left: 1em;
+	padding-right: 1em; }
+main p{
+	padding-left: 1em;
+	padding-right: 1em; }
+main div{
+	padding-left: 1em;
+	padding-right: 1em; }
+main ul{
+	padding-left: 2em; }
+main dl{
+	padding-left: 1em;
+	padding-right: 1em; }
+	
+div{
+	padding-left: 3em;
+	padding-right: 2em; }
+	
+img{
+	padding-left: 10px;
+	padding-right: 10px; }
+
+table{
+	width: 90%;
+	border-spacing: 0; }
+tr:nth-of-type(odd){
+	background-color:#D2B48E; }
+th, td{
+	padding: 10px; }
+	
+form{
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 80%; }
+input, textarea{
+	margin-bottom: .5em; }
+	
+h1{
+	font-size: 2em; }	
+h2{
+	color: #8C3826; }
+h3{
+	color: #8C3826; }
+dt{
+	color: #8C3826; }
+h4{
+	background-color: #D2B48C;
+	border-bottom: solid;
+	clear: left; 
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding-left: .5em;
+	padding-bottom: 0; }
+	
+footer{
+	background-color: #D2B48C;
+	font-size: .60em;
+	text-align: center;
+	font-style: italic; 
+	padding: 1em;
+	border-top: 2px solid #8C3826; }
+	
+* {
+	box-sizing: border-box; }
+
+#wrapper{
+	background-color: #231814;
+	padding: 0; }
+#homehero{
+	height: 300px;
+	background-image: url(road.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; }
+#heromugs{
+	height: 300px;
+	background-image: url(threemugs.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; }
+#heroguitar{
+	height: 300px;
+	background-image: url(guitar.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; }
+#herojobs{
+	height: 300px;
+	background-image: url(coffeecup.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;	}
+#mobile{
+	display: inline; }
+#desktop{
+	display: none; }
+	
+.details{
+	padding-left: 20%;
+	padding-right: 20%; 
+	overflow: auto; }
+.floatleft{
+	float: left;
+	padding-bottom: 2em;
+	padding-right: 2em; }
+
+@media(min-width: 600px){
+	header{
+		text-align: center;
+		padding-left: 0; }
+	h1{
+		font-size: 3em; }
+	h4{
+		margin-left: 10%;
+		margin-right: 10% }
+	nav ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around; }
+	nav li{
+		border-bottom: none; }
+	form{
+		display: grid;
+		width: 40%;
+		grid-gap: 1em;
+		grid-template-columns: 6em 1fr; }
+	input[type="submit"]{
+		grid-column: 2/3; 
+		width: 9em; }	
+	#homehero{
+		height: 50vh;
+		background-image: url(hero.jpg); }
+	#heromugs{
+		background-image: url(heromugs.jpg); }
+	#heroguitar{
+		background-image: url(heroguitar.jpg); }
+	#herojobs{
+		background-image: url(herojobs.jpg); }
+	#flow{
+		display: flex;
+		flex-direction: row; }
+	#mobile{
+		display: none; }
+	#desktop{
+		display: inline; }
+	.details{
+		display: flex;
+		flex-direction: row; }
+	}
+@media(min-width: 1024px){
+	header{
+		background-image: url(coffeelogo.jpg);
+		grid-area: h }
+	nav{
+		grid-area: n; }
+	main{
+		grid-area: m; }
+	footer{
+		grid-area: f; }
+	#wrapper{
+		display: grid;
+		grid-template: 
+			"h		h"
+			"n		m"
+			"f		f"
+		/200px;	}
+	nav ul{
+		flex-direction: column; }
+	}
